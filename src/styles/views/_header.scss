@@ -1,0 +1,55 @@
+header{
+
+	height: 101px;
+	background: #FFF;
+
+	#site_logo{
+		margin: 15px 0 0 0;
+	}
+
+	nav ul{
+		height: 101px;
+		display: flex;
+		align-items: center;
+		float: right;
+	}
+
+	nav a{
+		color: $bordeau;
+		font-size: getFontSize(20);
+		@include font-omnes-light();
+		display: block;
+	}
+
+	nav li{
+		
+		margin: 0 0 0 26px;
+
+		&.icon+.icon{
+			margin: 0 0 0 16px;
+		}
+
+		&.lang{
+			a, span{
+				color: $red;
+				display: inline;
+			}
+
+			a{
+				@include font-omnes-semibold();
+				&.active{
+					color: $bordeau;
+				}
+			}
+
+			span{
+				font-size: getFontSize(25);
+				@include font-omnes-light();
+			}
+		}
+	}
+}
+
+#site_logo{
+	width: 171px;
+}

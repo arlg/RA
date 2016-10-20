@@ -1,0 +1,38 @@
+#home_want{
+	margin: 80px 0 130px 0;
+
+	h3{
+		color: $red;
+		@include font-weiss();
+		font-size: getFontSize(30);
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 0 45px 0;
+	}
+
+	.elements_wrapper{
+		text-align: center;
+
+		.row{
+			align-items: center;
+			// margin: 0 0 50px 0;
+
+			&+.row{
+				margin: 0;				
+			}
+		}
+
+		.col_4{
+			margin: 0 0 40px 0;
+			div{
+				margin: 0 auto 25px auto;
+			}
+		}
+		p{
+			color: $grey;
+			font-size: getFontSize(25);
+			@include font-omnes-light();
+		}
+	}
+
+}

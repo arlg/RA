@@ -1,0 +1,54 @@
+/*
+Theme Name: Richelieu
+Theme URI: 
+Author: Richelieu Advisors
+Author URI: http://arlg.me;
+Description: Richelieu Custom Theme
+Text Domain: richelieu
+*/
+
+@import "settings";
+@import "plugins/reset";
+@import "functions";
+@import "fonts/fonts";
+@import "grid";
+@import "sprite";
+
+@include retina-sprites($retina-groups);
+
+html{
+	font-size: 16px;
+}
+
+body{
+  	// font-family: 'Expo Sans Pro', Arial, sans-serif;
+  	-webkit-font-smoothing: antialiased;
+}
+
+  
+/**
+	Common styles for the whole app
+**/
+@import "common.scss";
+
+
+/**
+	VIEWS
+**/
+@import "views/header.scss";
+@import "views/home_video.scss";
+@import "views/home_want.scss";
+@import "views/parallax_image.scss";
+@import "views/section_service.scss";
+@import "views/about.scss";
+@import "views/footer.scss";
+@import "views/contact.scss";
+
+
+@import "modules/text_style.scss";
+@import "modules/hides.scss";
+
+/**
+	Media queries
+**/
+@import "media-queries.scss";

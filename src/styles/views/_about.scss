@@ -1,0 +1,48 @@
+#about{
+	padding: 90px 0 60px 0;
+	background: linear-gradient(0deg, #fff 50%, #f5f6f9 50%);
+
+	.description_row{
+		img{
+			width: 142px;
+			float: left;
+			margin: 0 30px 0 0;
+		}
+
+		p{
+			color: #3b4145;
+			@include font-omnes-light();
+			font-size: getFontSize(20);
+		}
+	}
+
+	.portraits_row{
+		text-align:center;
+		margin: 45px 0 0 0;
+
+		.portrait_wrapper{
+
+			.portrait_inner{
+				width: 195px; height: 195px;
+				margin: 0 auto 30px auto;
+				background: #FFF;
+				border-radius: 50%;
+				img{
+					width: 160px;
+					margin: 17px 0 0 0;
+				}
+			}
+			
+		}
+
+		.red_title{
+			margin: 0 0 25px 0;
+		}
+
+		p{
+			color: #3b4145;
+			font-size: getFontSize(15);
+			@include font-omnes-light();
+		}
+	}
+}

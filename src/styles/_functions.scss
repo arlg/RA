@@ -1,0 +1,32 @@
+// // Fonts
+@mixin font-omnes-light(){
+	font-family: 'Omnes', Arial, sans-serif;
+	font-style:   normal;font-weight:  200;
+}
+
+@mixin font-omnes-regular(){
+	font-family: 'Omnes', Arial, sans-serif;
+  	font-style:   normal;font-weight:  400;
+}
+
+@mixin font-omnes-semibold(){
+	font-family: 'Omnes', Arial, sans-serif;
+  	font-style:   normal; font-weight:  700;
+}
+
+@mixin font-weiss(){
+	font-family: 'Weiss Std', Arial, sans-serif;
+  	font-style:   normal;font-weight:  400;
+}
+
+// @function getSize($el, $parent){
+// 	@return ( ( $el / $parent ) * 100% );
+// }
+
+// @function getSizevW($el){
+// 	@return (( $el / 1920 )  * 100 );
+// }
+
+@function getFontSize($size){
+	@return ( ( $size / 16 ) * 1rem );
+}

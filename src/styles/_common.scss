@@ -1,0 +1,16 @@
+/**
+	Everything common to the app 
+	( can make separate files in a folder )
+**/
+
+.red_title{
+	color: $red;
+	font-size: getFontSize(30);
+	@include font-weiss();
+}
+
+.subtitle{
+	color: #3b4145;
+	font-size: getFontSize(20);
+	@include font-omnes-semibold();
+}

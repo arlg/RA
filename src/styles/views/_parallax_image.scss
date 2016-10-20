@@ -1,0 +1,60 @@
+.parallax_image_wrapper{
+	height: 350px;
+	position: relative;
+
+	.parallax_image{
+		height: 350px;
+		background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	// background-size: contain;
+    	background-size: cover;
+
+    	&.tajmahal{
+			background-image: url("../img/tajmahal.jpg");
+    	}
+
+    	&.man{
+			background-image: url("../img/man.jpg");
+    	}
+
+    	&.paris{
+			background-image: url("../img/paris.jpg");
+    	}
+
+    	&.tajmahal2{
+			background-image: url("../img/tajmahal2.jpg");
+    	}
+	}
+
+	.parallax_image{
+		
+		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+
+		p, h4, h3{
+			color: #FFF;
+			text-transform: uppercase;
+			text-align:center;
+		}
+
+		p{
+			@include font-omnes-regular();
+			font-size: getFontSize(20);
+			margin: 0 0 15px 0;
+		}
+
+		h4{
+			@include font-weiss();
+			font-size: getFontSize(40);
+			line-height: 1.2em;
+		}
+
+		h3{
+			@include font-weiss();
+			font-size: getFontSize(50);
+		}
+	}
+
+}

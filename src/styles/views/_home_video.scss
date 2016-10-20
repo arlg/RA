@@ -1,0 +1,41 @@
+#home_video{
+	width: 100%;
+	height: 640px;
+	position: relative;
+	overflow:hidden;
+
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+
+	.red_cover{
+		position: absolute; top: 0; left: 0;
+		width: 100%; height: 100%;
+		z-index: 2;
+		background: #490c0b;
+		opacity: 0.5;
+	}
+
+	.video_wrapper{
+		position: absolute; top: 0; left: 0;
+		// height: 300px;
+	}
+
+	video{
+		// object-fit: contain;
+		width: 100%; height: 100%;
+		
+		z-index: 1;
+	}
+
+	p{
+		z-index: 3;
+		color: #FFF;
+		@include font-omnes-light();
+		font-size: getFontSize(40);
+		text-align:center;
+		// position: absolute;
+		// top: -50%; margin-top: 50%;
+	}
+
+}

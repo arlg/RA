@@ -1,0 +1,22 @@
+footer{
+	height: 70px;
+	width: 100%;
+	background: $bordeau;
+
+	.col_4{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 70px;
+
+		span, a{
+			color: #FFF;
+			font-size: getFontSize(15);
+			@include font-omnes-light();
+		}
+
+		a{
+			text-decoration: underline;
+		}
+	}
+}
