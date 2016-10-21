@@ -865,10 +865,12 @@ footer .col_8 .icon + .icon {
   background-image: url("../img/hides/mod_top_all_grey.svg");
 }
 .mod_after_pan.mod_bot_contact:after {
-  bottom: -1px;
+  bottom: 0;
   z-index: 4;
   height: 48px;
-  background-image: url("../img/hides/mod_bot_contact.svg");
+  background-image: url("../img/hides/mod_bot_contact.png");
+  background-size: contain;
+  background-position: bottom;
 }
 
 .mod_before_pan:before {
