@@ -23,7 +23,7 @@
     <body>
         
 
-<header>
+<header id="header">
     <div class="grid_container">
         <div class="row">
             <div class="col_4">

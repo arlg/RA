@@ -1,0 +1,31 @@
+#blog{
+	#blog_contents{
+		margin: 70px 0 0 0;
+
+		h1{
+			color: $red;
+			@include font-weiss();
+			font-size: getFontSize(30);
+			margin: 0 0 20px 0;
+		}
+
+		h2, p{
+			color: #3b4145;
+			@include font-omnes-light();
+		}
+
+		h2{
+			font-size: getFontSize(25);
+			margin: 0 0 30px 0;
+		}
+
+		p{
+			font-size: getFontSize(15);
+		}
+
+		p img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}

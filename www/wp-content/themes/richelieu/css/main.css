@@ -451,14 +451,14 @@ body {
 /**
 	VIEWS
 **/
-header {
+#header {
   height: 101px;
   background: #FFF;
 }
-header #site_logo {
+#header #site_logo {
   margin: 15px 0 0 0;
 }
-header nav ul {
+#header nav ul {
   height: 101px;
   display: -ms-flexbox;
   display: flex;
@@ -466,7 +466,7 @@ header nav ul {
       align-items: center;
   float: right;
 }
-header nav a {
+#header nav a {
   color: #861817;
   font-size: 1.25rem;
   font-family: 'Omnes', Arial, sans-serif;
@@ -474,25 +474,25 @@ header nav a {
   font-weight: 200;
   display: block;
 }
-header nav li {
+#header nav li {
   margin: 0 0 0 26px;
 }
-header nav li.icon + .icon {
+#header nav li.icon + .icon {
   margin: 0 0 0 16px;
 }
-header nav li.lang a, header nav li.lang span {
+#header nav li.lang a, #header nav li.lang span {
   color: #c81517;
   display: inline;
 }
-header nav li.lang a {
+#header nav li.lang a {
   font-family: 'Omnes', Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
 }
-header nav li.lang a.active {
+#header nav li.lang a.active {
   color: #861817;
 }
-header nav li.lang span {
+#header nav li.lang span {
   font-size: 1.5625rem;
   font-family: 'Omnes', Arial, sans-serif;
   font-style: normal;
@@ -834,6 +834,35 @@ footer .right .icon + .icon {
 }
 #contact .ccf-form-wrapper .ccf-submit-button:focus {
   outline: none;
+}
+
+#blog #blog_contents {
+  margin: 70px 0 0 0;
+}
+#blog #blog_contents h1 {
+  color: #c81517;
+  font-family: 'Weiss Std', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.875rem;
+  margin: 0 0 20px 0;
+}
+#blog #blog_contents h2, #blog #blog_contents p {
+  color: #3b4145;
+  font-family: 'Omnes', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+#blog #blog_contents h2 {
+  font-size: 1.5625rem;
+  margin: 0 0 30px 0;
+}
+#blog #blog_contents p {
+  font-size: 0.9375rem;
+}
+#blog #blog_contents p img {
+  width: 100%;
+  height: auto;
 }
 
 .mod_after_pan:after {
