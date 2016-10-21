@@ -205,10 +205,19 @@
 			</div>
 			<div class="col_1"></div>
 			<div class="col_4">
-				<p class="red_title"><?php echo get_field( "contact_headquarters_title" ); ?></p>
-				<?php echo get_field( "contact_headquarters_address" ); ?>
-				<p class="red_title"><?php echo get_field( "contact_offices_title" ); ?></p>
-				<?php echo get_field( "contact_offices_address" ); ?>
+
+				<div class="row">
+					<div class="col_12">
+						<p class="red_title"><?php echo get_field( "contact_headquarters_title" ); ?></p>
+						<?php echo get_field( "contact_headquarters_address" ); ?>
+					</div>
+					<div class="col_12">
+						<p class="red_title"><?php echo get_field( "contact_offices_title" ); ?></p>
+						<?php echo get_field( "contact_offices_address_1" ); ?>
+						<?php echo get_field( "contact_offices_address_2" ); ?>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>

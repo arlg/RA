@@ -92,6 +92,7 @@
     }
 
     #contact{
+        background: #fff;
         .col_6, .col_4{
             width: 90%;
             margin: 0 5%;
@@ -100,13 +101,21 @@
         .col_4{
             margin: 50px 5% 0 5%;
         }
+
+        .col_12{
+            width: 50%;
+
+            &+.col_12{
+                margin: 0;
+            }
+        }
     }
 
     footer{
-        .col_4{
+        .left{
             width: 75%
         }
-        .col_8{
+        .right{
             width: 25%;
         }
     }
@@ -114,6 +123,12 @@
     // Hides
     .mod_after_pan{
         &.mod_top_grey{
+            &:after{
+                background-image:url("../img/hides/mod_top_white.svg");
+            }
+        }
+
+        &.mod_bot_contact{
             &:after{
                 background-image:url("../img/hides/mod_top_white.svg");
             }
@@ -165,9 +180,10 @@
 
     footer{
         height: auto;
-        .col_4, .col_8{ 
+        .left, .right{ 
             justify-content: space-around;
-            width: 100%
+            width: 100%;
+            height: 70px;
         }
     }
 
@@ -179,4 +195,15 @@
     .section_service, #about{
         padding: 40px 0;
     }
+ 
+    #contact{
+        .col_12{
+            width: 100%;
+    
+            &+.col_12{
+                margin: 25px 0 0 0;
+            }
+        }    
+    }
+    
 }

@@ -3,9 +3,9 @@ footer{
 	width: 100%;
 	background: $bordeau;
 
-	.col_4{
+	.left{
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 		height: 70px;
 
@@ -13,6 +13,7 @@ footer{
 			color: #FFF;
 			font-size: getFontSize(15);
 			@include font-omnes-light();
+			margin: 0 10px;
 		}
 
 		a{
@@ -20,7 +21,7 @@ footer{
 		}
 	}
 
-	.col_8{
+	.right{
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;

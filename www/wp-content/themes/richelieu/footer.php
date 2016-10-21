@@ -11,10 +11,10 @@
 	
 	<div class="grid_container">
 		<div class="row">
-			<div class="col_4">
+			<div class="col_6 left">
 				<span>© 2016</span><span>|</span><span>Richelieu Advisors</span><span>•</span><a href="">Legal mentions</a>
 			</div>
-			<div class="col_8">
+			<div class="col_6 right">
 				<ul>
 					<li class="icon">
                         <a href="#" class="icon-linkedin"></a>
