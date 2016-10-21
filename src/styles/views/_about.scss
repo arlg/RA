@@ -13,6 +13,7 @@
 			color: #3b4145;
 			@include font-omnes-light();
 			font-size: getFontSize(20);
+			overflow: hidden;
 		}
 	}
 
@@ -39,7 +40,7 @@
 			margin: 0 0 25px 0;
 		}
 
-		p{
+		.bio{
 			color: #3b4145;
 			font-size: getFontSize(15);
 			@include font-omnes-light();

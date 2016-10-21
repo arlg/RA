@@ -38,6 +38,16 @@
 
 		}
 	}
+
+	&.mod_bot_contact{
+		&:after{
+			bottom: -1px; 
+			z-index: 4;
+			height: 48px;
+			background-image:url("../img/hides/mod_bot_contact.svg");
+
+		}
+	}
 }
 
 

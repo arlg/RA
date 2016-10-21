@@ -18,15 +18,22 @@ W.App = function(){
 
     function build(){
 
-       console.log('Entry point');
+        _checkVideoLoaded();
 
-       _domVideoInner.addEventListener('loadeddata', function() {
-           _initFit();
-        }, false);
+    }
+
+    function _checkVideoLoaded(){
+
+        if (_domVideoInner.readyState === 4) {
+            _initFit();
+        } else {
+            setTimeout(_checkVideoLoaded, 50);
+        }
 
     }
 
     function _initFit(){
+        console.log('init Fit');
         var cover = true;
         fit( _domVideo, _domPlayer, {cover: true, watch: true, vAlign: fit.CENTER} );
     }

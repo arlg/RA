@@ -1,6 +1,14 @@
 #contact{
-	
 	padding: 40px 0 75px 0;
+	// background: linear-gradient(90deg, #fff 50%, #f5f6f9 50%);
+	background: linear-gradient(90deg, #fff 62%, #f5f6f9 62%);
+
+	// 1635 -1190
+	// 2640 1920
+
+	// 320 / 2640/2
+
+	//12%
 
 	.subtitle{
 		margin: 25px 0;
@@ -77,13 +85,26 @@
 		}
 
 		.ccf-submit-button{
-			width: 165px;
-			background: $bordeau;
+			cursor: pointer;
+			// 115 //20
+			width: 115px;
+			padding: 0 20px;
+			// background: $bordeau;
 			border: 0;
-			height: 48px;
+			height: 38px;
 			font-size: getFontSize(15);
 			color: #fff;
-			text-align:center;
+			text-align: left;
+			
+			background: url("../img/icon-arrow-submit.png") no-repeat $bordeau 71% 13px;
+
+
+			// &:after{
+			// 	@include sprite-position($icon-arrow-submit);
+			// 	@include sprite-image($icon-arrow-submit);
+			// 	@include sprite-background-size($icon-arrow-submit);	
+			// 	content: "";
+			// }
 
 			&:focus{
 				outline: none;

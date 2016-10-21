@@ -138,7 +138,6 @@ a {
 
 [class*="col_"] {
   padding: 0 15px;
-  background-clip: content-box;
 }
 
 /* SASS variables are information about icon's compiled state, stored under its original file name
@@ -199,7 +198,7 @@ a {
  */
 .icon-1 {
   background-image: url(../img/sprite.png);
-  background-position: -210px -225px;
+  background-position: -140px -225px;
   width: 70px;
   height: 70px;
 }
@@ -212,7 +211,7 @@ a {
 
 .icon-2 {
   background-image: url(../img/sprite.png);
-  background-position: -140px -225px;
+  background-position: -307px -210px;
   width: 70px;
   height: 70px;
 }
@@ -225,7 +224,7 @@ a {
 
 .icon-3 {
   background-image: url(../img/sprite.png);
-  background-position: -307px 0px;
+  background-position: -70px -225px;
   width: 70px;
   height: 70px;
 }
@@ -238,7 +237,7 @@ a {
 
 .icon-4 {
   background-image: url(../img/sprite.png);
-  background-position: -307px -70px;
+  background-position: -210px -225px;
   width: 70px;
   height: 70px;
 }
@@ -251,7 +250,7 @@ a {
 
 .icon-5 {
   background-image: url(../img/sprite.png);
-  background-position: -307px -140px;
+  background-position: -307px 0px;
   width: 70px;
   height: 70px;
 }
@@ -264,7 +263,7 @@ a {
 
 .icon-6 {
   background-image: url(../img/sprite.png);
-  background-position: -307px -210px;
+  background-position: -307px -70px;
   width: 70px;
   height: 70px;
 }
@@ -277,7 +276,7 @@ a {
 
 .icon-7 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -225px;
+  background-position: -307px -140px;
   width: 70px;
   height: 70px;
 }
@@ -290,12 +289,25 @@ a {
 
 .icon-8 {
   background-image: url(../img/sprite.png);
-  background-position: -70px -225px;
+  background-position: 0px -225px;
   width: 70px;
   height: 70px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .icon-8 {
+    background-image: url(../img/sprite@2x.png);
+    background-size: 377px 295px;
+  }
+}
+
+.icon-arrow-submit {
+  background-image: url(../img/sprite.png);
+  background-position: -307px -280px;
+  width: 18px;
+  height: 11px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon-arrow-submit {
     background-image: url(../img/sprite@2x.png);
     background-size: 377px 295px;
   }
@@ -511,7 +523,7 @@ header nav li.lang span {
   height: 100%;
   z-index: 2;
   background: #490c0b;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 #home_video .video_wrapper {
   position: absolute;
@@ -638,6 +650,9 @@ header nav li.lang span {
   margin: 0 15px 0 0;
   float: left;
 }
+.section_service .content {
+  overflow: hidden;
+}
 .section_service .content p {
   color: #3b4145;
   font-family: 'Omnes', Arial, sans-serif;
@@ -668,6 +683,7 @@ header nav li.lang span {
   font-style: normal;
   font-weight: 200;
   font-size: 1.25rem;
+  overflow: hidden;
 }
 #about .portraits_row {
   text-align: center;
@@ -687,7 +703,7 @@ header nav li.lang span {
 #about .portraits_row .red_title {
   margin: 0 0 25px 0;
 }
-#about .portraits_row p {
+#about .portraits_row .bio {
   color: #3b4145;
   font-size: 0.9375rem;
   font-family: 'Omnes', Arial, sans-serif;
@@ -719,9 +735,24 @@ footer .col_4 span, footer .col_4 a {
 footer .col_4 a {
   text-decoration: underline;
 }
+footer .col_8 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+footer .col_8 li, footer .col_8 a {
+  display: inline-block;
+}
+footer .col_8 .icon + .icon {
+  margin: 0 0 0 14px;
+}
 
 #contact {
   padding: 40px 0 75px 0;
+  background: linear-gradient(90deg, #fff 62%, #f5f6f9 62%);
 }
 #contact .subtitle {
   margin: 25px 0;
@@ -790,13 +821,15 @@ footer .col_4 a {
   width: 100%;
 }
 #contact .ccf-form-wrapper .ccf-submit-button {
-  width: 165px;
-  background: #861817;
+  cursor: pointer;
+  width: 115px;
+  padding: 0 20px;
   border: 0;
-  height: 48px;
+  height: 38px;
   font-size: 0.9375rem;
   color: #fff;
-  text-align: center;
+  text-align: left;
+  background: url("../img/icon-arrow-submit.png") no-repeat #861817 71% 13px;
 }
 #contact .ccf-form-wrapper .ccf-submit-button:focus {
   outline: none;
@@ -831,6 +864,12 @@ footer .col_4 a {
   height: 48px;
   background-image: url("../img/hides/mod_top_all_grey.svg");
 }
+.mod_after_pan.mod_bot_contact:after {
+  bottom: -1px;
+  z-index: 4;
+  height: 48px;
+  background-image: url("../img/hides/mod_bot_contact.svg");
+}
 
 .mod_before_pan:before {
   width: 100%;
@@ -860,6 +899,26 @@ footer .col_4 a {
 	Media queries
 **/
 @media only screen and (max-width: 960px) {
+  .section_service {
+    background: linear-gradient(-180deg, #fff 50%, #f5f6f9 50%);
+  }
+  .section_service .row .col_6:first-child {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .section_service .row .col_6:nth-child(2) {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .section_service .row .col_6:nth-child(3) {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .section_service .row .col_6:nth-child(4) {
+    -ms-flex-order: 4;
+        order: 4;
+  }
+
   .section_service .col_6 {
     width: 70%;
     margin: 0 auto 60px auto;
@@ -905,12 +964,27 @@ footer .col_4 a {
     text-align: center;
   }
   header nav ul {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     float: none;
   }
   header nav ul li {
     margin: 0;
+  }
+
+  #contact .col_6, #contact .col_4 {
+    width: 90%;
+    margin: 0 5%;
+  }
+  #contact .col_4 {
+    margin: 50px 5% 0 5%;
+  }
+
+  footer .col_4 {
+    width: 75%;
+  }
+  footer .col_8 {
+    width: 25%;
   }
 }
 @media only screen and (max-width: 460px) {
@@ -933,5 +1007,14 @@ footer .col_4 a {
 
   .col_8 {
     margin: 10px 0;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer .col_4, footer .col_8 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
   }
 }

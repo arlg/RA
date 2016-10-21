@@ -1,4 +1,26 @@
 @media only screen and (max-width: 960px) {
+    
+    // Change background and order
+    .section_service{
+        background: linear-gradient(-180deg, #fff 50%, #f5f6f9 50%);
+
+        .row{
+            .col_6{
+                &:first-child{
+                    order: 1;
+                }
+                &:nth-child(2){
+                    order: 3;
+                }
+                &:nth-child(3){
+                    order: 2;
+                }
+                &:nth-child(4){
+                    order: 4;
+                }
+            }
+        }
+    }
 
 	.section_service .col_6{
 		width: 70%;
@@ -53,13 +75,33 @@
 
         nav{
             ul{
-                justify-content: space-between;
+                justify-content: space-around;
                 float: none;
 
                 li{
                     margin: 0;
                 }
             }
+        }
+    }
+
+    #contact{
+        .col_6, .col_4{
+            width: 90%;
+            margin: 0 5%;
+        }
+
+        .col_4{
+            margin: 50px 5% 0 5%;
+        }
+    }
+
+    footer{
+        .col_4{
+            width: 75%
+        }
+        .col_8{
+            width: 25%;
         }
     }
 }
@@ -89,5 +131,13 @@
 
     .col_8{
         margin: 10px 0;
+    }
+
+    footer{
+        height: auto;
+        .col_4, .col_8{ 
+            justify-content: space-around;
+            width: 100%
+        }
     }
 }

@@ -19,4 +19,18 @@ footer{
 			text-decoration: underline;
 		}
 	}
+
+	.col_8{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		li, a{
+			display: inline-block;
+		}
+
+		.icon+.icon{
+			margin: 0 0 0 14px;
+		}
+	}
 }
