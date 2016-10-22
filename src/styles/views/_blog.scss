@@ -47,9 +47,9 @@
 	}
 
 	.next_page, .prev_page{
-		display: block;
+		display: inline-block;
 		cursor: pointer;
-		width: 115px;
+		// width: 115px;
 		padding: 0 20px;
 		border: 0;
 		height: 38px;
@@ -60,14 +60,16 @@
 		
 
 		&.prev_page{
+			padding: 0 20px 0 50px;
 			text-align: right;
-			background: url("../img/icon-arrow-submit-reverse.png") no-repeat $bordeau 29% 13px;
+			background: url("../img/icon-arrow-submit-reverse.png") no-repeat $bordeau 20px 13px;
 		}
 
 		&.next_page{
+			padding: 0 50px 0 20px;
 			float: right;
 			text-align: left;
-			background: url("../img/icon-arrow-submit.png") no-repeat $bordeau 71% 13px;
+			background: url("../img/icon-arrow-submit.png") no-repeat $bordeau 80% 13px;
 		}
 	}
 }

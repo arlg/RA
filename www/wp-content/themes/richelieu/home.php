@@ -38,7 +38,7 @@
 						?>
 						<div class="posts_nav col_10">
 							<?php
-								posts_nav_link( "|", "Prev", "Next" );
+								posts_nav_link( "|", pll__("Previous"), pll__("Next") );
 							?>
 						</div>
 						<?php

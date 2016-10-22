@@ -879,9 +879,8 @@ footer .right .icon + .icon {
   clear: both;
 }
 #blog .next_page, #blog .prev_page {
-  display: block;
+  display: inline-block;
   cursor: pointer;
-  width: 115px;
   padding: 0 20px;
   border: 0;
   height: 38px;
@@ -893,13 +892,15 @@ footer .right .icon + .icon {
   color: #fff;
 }
 #blog .next_page.prev_page, #blog .prev_page.prev_page {
+  padding: 0 20px 0 50px;
   text-align: right;
-  background: url("../img/icon-arrow-submit-reverse.png") no-repeat #861817 29% 13px;
+  background: url("../img/icon-arrow-submit-reverse.png") no-repeat #861817 20px 13px;
 }
 #blog .next_page.next_page, #blog .prev_page.next_page {
+  padding: 0 50px 0 20px;
   float: right;
   text-align: left;
-  background: url("../img/icon-arrow-submit.png") no-repeat #861817 71% 13px;
+  background: url("../img/icon-arrow-submit.png") no-repeat #861817 80% 13px;
 }
 
 .mod_after_pan:after {

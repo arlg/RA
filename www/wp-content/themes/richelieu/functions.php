@@ -44,4 +44,25 @@ function posts_link_attributes_1() {
 function posts_link_attributes_2() {
     return 'class="prev_page"';
 }
+
+
+// Polylang strings to translate
+if ( function_exists( 'pll_register_string' ) ) {
+
+pll_register_string( 'menu 1', 'Services', 'header' );
+pll_register_string( 'menu 2', 'Training', 'header' );
+pll_register_string( 'menu 3', 'About Us', 'header' );
+pll_register_string( 'menu 4', 'Contact', 'header' );
+pll_register_string( 'menu 5', 'Blog', 'header' );
+pll_register_string( 'meta description', 'Description', 'meta' );
+pll_register_string( 'mentions link', 'legalmentions', 'footer' );
+pll_register_string( 'mentions text', 'Legal mentions', 'footer' );
+pll_register_string( 'linkedin link', 'linkedin', 'footer' );
+pll_register_string( 'twitter text', 'twitter', 'footer' );
+pll_register_string( 'previous', 'Previous', 'blog' );
+pll_register_string( 'next', 'Next', 'blog' );
+
+}
+
+
 ?>
