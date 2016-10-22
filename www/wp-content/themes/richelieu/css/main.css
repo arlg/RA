@@ -751,14 +751,14 @@ footer .right .icon + .icon {
   margin: 0 0 0 14px;
 }
 
-#contact {
+#contact_section {
   padding: 40px 0 75px 0;
   background: linear-gradient(90deg, #fff 62%, #f5f6f9 62%);
 }
-#contact .subtitle {
+#contact_section .subtitle {
   margin: 25px 0;
 }
-#contact .contact_form_title {
+#contact_section .contact_form_title {
   margin: 25px 0 0 0;
   color: #3b4145;
   font-family: 'Omnes', Arial, sans-serif;
@@ -766,29 +766,29 @@ footer .right .icon + .icon {
   font-weight: 200;
   font-size: 1.25rem;
 }
-#contact .col_12 + .col_12 {
+#contact_section .col_12 + .col_12 {
   margin: 25px 0 0 0;
 }
-#contact .address {
+#contact_section .address {
   color: #3b4145;
   font-family: 'Omnes', Arial, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 0.9375rem;
 }
-#contact .address span, #contact .address a {
+#contact_section .address span, #contact_section .address a {
   color: #861817;
 }
-#contact .ccf-form-wrapper {
+#contact_section .ccf-form-wrapper {
   margin: 30px 0 0 0;
 }
-#contact .ccf-form-wrapper .field, #contact .ccf-form-wrapper .form-submit {
+#contact_section .ccf-form-wrapper .field, #contact_section .ccf-form-wrapper .form-submit {
   margin: 15px 0 0;
 }
-#contact .ccf-form-wrapper label {
+#contact_section .ccf-form-wrapper label {
   display: none;
 }
-#contact .ccf-form-wrapper input, #contact .ccf-form-wrapper textarea {
+#contact_section .ccf-form-wrapper input, #contact_section .ccf-form-wrapper textarea {
   width: 60%;
   padding: 15px 20px;
   height: 15px;
@@ -802,37 +802,37 @@ footer .right .icon + .icon {
   resize: none;
   background: #f5f6f9;
 }
-#contact .ccf-form-wrapper input::-webkit-input-placeholder, #contact .ccf-form-wrapper textarea::-webkit-input-placeholder {
+#contact_section .ccf-form-wrapper input::-webkit-input-placeholder, #contact_section .ccf-form-wrapper textarea::-webkit-input-placeholder {
   color: #3b4145;
 }
-#contact .ccf-form-wrapper input::-moz-placeholder, #contact .ccf-form-wrapper textarea::-moz-placeholder {
+#contact_section .ccf-form-wrapper input::-moz-placeholder, #contact_section .ccf-form-wrapper textarea::-moz-placeholder {
   color: #3b4145;
 }
-#contact .ccf-form-wrapper input::-moz-placeholder, #contact .ccf-form-wrapper textarea::-moz-placeholder {
+#contact_section .ccf-form-wrapper input::-moz-placeholder, #contact_section .ccf-form-wrapper textarea::-moz-placeholder {
   color: #3b4145;
 }
-#contact .ccf-form-wrapper input::-ms-input-placeholder, #contact .ccf-form-wrapper textarea::-ms-input-placeholder {
+#contact_section .ccf-form-wrapper input::-ms-input-placeholder, #contact_section .ccf-form-wrapper textarea::-ms-input-placeholder {
   color: #3b4145;
 }
-#contact .ccf-form-wrapper input:focus, #contact .ccf-form-wrapper textarea:focus {
+#contact_section .ccf-form-wrapper input:focus, #contact_section .ccf-form-wrapper textarea:focus {
   outline: none;
 }
-#contact .ccf-form-wrapper textarea {
+#contact_section .ccf-form-wrapper textarea {
   height: 150px;
   width: 100%;
 }
-#contact .ccf-form-wrapper .ccf-submit-button {
+#contact_section .ccf-form-wrapper .ccf-submit-button {
   cursor: pointer;
-  width: 115px;
-  padding: 0 20px;
+  width: auto;
+  padding: 0 50px 0 20px;
   border: 0;
   height: 38px;
   font-size: 0.9375rem;
   color: #fff;
   text-align: left;
-  background: url("../img/icon-arrow-submit.png") no-repeat #861817 71% 13px;
+  background: url("../img/icon-arrow-submit.png") no-repeat #861817 83% 13px;
 }
-#contact .ccf-form-wrapper .ccf-submit-button:focus {
+#contact_section .ccf-form-wrapper .ccf-submit-button:focus {
   outline: none;
 }
 

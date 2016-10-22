@@ -50,9 +50,13 @@ function posts_link_attributes_2() {
 if ( function_exists( 'pll_register_string' ) ) {
 
 pll_register_string( 'menu 1', 'Services', 'header' );
+pll_register_string( 'menu 1 link', 'services', 'header' );
 pll_register_string( 'menu 2', 'Training', 'header' );
+pll_register_string( 'menu 2 link', 'training', 'header' );
 pll_register_string( 'menu 3', 'About Us', 'header' );
+pll_register_string( 'menu 3 link', 'about-us', 'header' );
 pll_register_string( 'menu 4', 'Contact', 'header' );
+pll_register_string( 'menu 4 link', 'contact', 'header' );
 pll_register_string( 'menu 5', 'Blog', 'header' );
 pll_register_string( 'meta description', 'Description', 'meta' );
 pll_register_string( 'mentions link', 'legalmentions', 'footer' );

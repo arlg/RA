@@ -64,7 +64,7 @@
 
 </section>
 
-<section id="" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_top_grey">
+<section id="<?php pll_e("services"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_top_grey">
 	<div class="parallax_image tajmahal">
 		<?php echo get_field( "image_text_1" ); ?>
 	</div>
@@ -138,7 +138,7 @@
 	</div>
 </section>
 
-<section id="" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_grey mod_top_all_grey">
+<section id="<?php pll_e("about-us"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_grey mod_top_all_grey">
 	<div class="parallax_image paris">
 		<?php echo get_field( "image_text_3" ); ?>
 	</div>
@@ -183,13 +183,13 @@
 	</div>
 </section>
 
-<section id="" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_bot_contact">
+<section id="<?php pll_e("contact"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_bot_contact">
 	<div class="parallax_image tajmahal2">
 		<?php echo get_field( "image_text_4" ); ?>
 	</div>
 </section>
 
-<section id="contact" class="">
+<section id="contact_section" class="">
 	
 	<div class="grid_container">
 		<div class="row">
@@ -199,7 +199,11 @@
 				<p class="contact_form_title"><?php echo get_field( "contact_description" ); ?></p>
 				<?php 
 				if ( function_exists( 'ccf_output_form' ) ) {
-    				ccf_output_form( 45 );
+
+					if( pll_current_language() == "en")
+						ccf_output_form( 45 );
+					else
+						ccf_output_form( 118 );
 				}
 				?>
 			</div>

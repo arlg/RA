@@ -31,16 +31,16 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#"><?php pll_e("Services"); ?></a>
+                            <a href="#<?php pll_e("services"); ?>" data-scroll><?php pll_e("Services"); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php pll_e("Training"); ?></a>
+                            <a href="<?php pll_e("training"); ?>"><?php pll_e("Training"); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php pll_e("About Us"); ?></a>
+                            <a href="#<?php pll_e("about-us"); ?>" data-scroll><?php pll_e("About Us"); ?></a>
                         </li>
                         <li>
-                            <a href="#"><?php pll_e("Contact"); ?></a>
+                            <a href="#<?php pll_e("contact"); ?>" data-scroll><?php pll_e("Contact"); ?></a>
                         </li>
                         <li>
                             <a href="/<?php echo pll_current_language();?>/blog"><?php pll_e("Blog"); ?></a>

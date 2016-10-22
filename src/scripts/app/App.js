@@ -19,6 +19,7 @@ W.App = function(){
     function build(){
 
         _checkVideoLoaded();
+        _smoothScroll();
 
     }
 
@@ -32,8 +33,15 @@ W.App = function(){
 
     }
 
+    function _smoothScroll(){
+
+        smoothScroll.init({
+            speed: 800
+        });
+
+    }
+
     function _initFit(){
-        console.log('init Fit');
         var cover = true;
         fit( _domVideo, _domPlayer, {cover: true, watch: true, vAlign: fit.CENTER} );
     }
