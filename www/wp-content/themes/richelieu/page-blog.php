@@ -12,7 +12,7 @@
 <?php get_header(); ?>
 
 
-// TODO BOG
+// TODO BlOG
 
 
 <?php get_footer(); ?>

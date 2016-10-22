@@ -90,14 +90,6 @@
 			
 			background: url("../img/icon-arrow-submit.png") no-repeat $bordeau 71% 13px;
 
-
-			// &:after{
-			// 	@include sprite-position($icon-arrow-submit);
-			// 	@include sprite-image($icon-arrow-submit);
-			// 	@include sprite-background-size($icon-arrow-submit);	
-			// 	content: "";
-			// }
-
 			&:focus{
 				outline: none;
 			}

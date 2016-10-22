@@ -24,4 +24,24 @@ function _scripts() {
 
 add_action( 'wp_enqueue_scripts', '_scripts' );
 
+add_filter( "the_content", "add_class_to_img_content" );
+function add_class_to_img_content( $content ) {
+    return str_replace('<p><img ', '<p class="img_wrapper"><img ', $content);
+}
+
+add_filter( "the_content", "add_class_to_p_content" );
+function add_class_to_p_content( $content ) {
+    return str_replace('<p>', '<p class="col_10">', $content);
+}
+
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
+
+function posts_link_attributes_1() {
+    return 'class="next_page"';
+}
+function posts_link_attributes_2() {
+    return 'class="prev_page"';
+}
 ?>
