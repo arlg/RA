@@ -8,6 +8,10 @@
   	flex-direction: column;
   	justify-content: center;
 
+  	background: url("../img/home_video_cover.jpg");
+	background-size: cover;
+	background-position: center;
+
 	.red_cover{
 		position: absolute; top: 0; left: 0;
 		width: 100%; height: 100%;
@@ -18,13 +22,10 @@
 
 	.video_wrapper{
 		position: absolute; top: 0; left: 0;
-		// height: 300px;
 	}
 
 	video{
-		// object-fit: contain;
 		width: 100%; height: 100%;
-		
 		z-index: 1;
 	}
 
@@ -34,8 +35,6 @@
 		@include font-omnes-light();
 		font-size: getFontSize(40);
 		text-align:center;
-		// position: absolute;
-		// top: -50%; margin-top: 50%;
 	}
 
 }

@@ -19,7 +19,7 @@
 	<div class="red_cover"></div>
 	
 	<div class="video_wrapper">
-		<video loop muted autoplay preload poster="<?php bloginfo('template_directory'); ?>/video/home_video_cover.jpg">
+		<video loop muted preload autoplay playsinline>
 			<source src="<?php bloginfo('template_directory'); ?>/video/home_video.webm" type="video/webm">
 			<source src="<?php bloginfo('template_directory'); ?>/video/home_video.mp4" type="video/mp4">
 			<source src="<?php bloginfo('template_directory'); ?>/video/home_video.ogv" type="video/ogv">
