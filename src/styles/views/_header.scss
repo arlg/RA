@@ -1,7 +1,13 @@
 #header{
-
+	width: 100%;
 	height: 101px;
 	background: #FFF;
+
+	&.isfixed{
+		position: fixed;
+		top: 0;
+		z-index: 666;
+	}
 
 	#site_logo{
 		margin: 15px 0 0 0;
@@ -37,13 +43,13 @@
 
 			a{
 				@include font-omnes-semibold();
+				font-size: getFontSize(16);
 				&.active{
 					color: $bordeau;
 				}
 			}
 
 			span{
-				font-size: getFontSize(25);
 				@include font-omnes-light();
 			}
 		}

@@ -4,7 +4,7 @@
  *
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
- * home.php
+ * front-page.php
  * @package Richelieu
  */
 ?>
@@ -14,7 +14,7 @@
 
 <section id="home_video" class="main_section mod_after_pan mod_bot_white">
 	
-	<p><?php echo get_field( "video_text" ); ?></p>
+	<p><?php the_field( "video_text" ); ?></p>
 
 	<div class="red_cover"></div>
 	
@@ -31,32 +31,32 @@
 <section id="home_want" class="main_section">
 
 	<div class="grid_container">
-		<h3><?php echo get_field( "home_want" ); ?></h3>
+		<h3><?php the_field( "home_want" ); ?></h3>
 		<div class="elements_wrapper">
 			<div class="row">
 	            <div class="col_4">
 					<div class="icon-loupe"></div>
-					<p><?php echo get_field( "home_1" ); ?></p>
+					<p><?php the_field( "home_1" ); ?></p>
 	            </div>
 	            <div class="col_4">
 					<div class="icon-papier"></div>
-					<p><?php echo get_field( "home_2" ); ?></p>
+					<p><?php the_field( "home_2" ); ?></p>
 	            </div>
 	            <div class="col_4">
 					<div class="icon-fusee"></div>
-					<p><?php echo get_field( "home_3" ); ?></p>
+					<p><?php the_field( "home_3" ); ?></p>
 	            </div>
 	            <div class="col_4">
 					<div class="icon-king"></div>
-					<p><?php echo get_field( "home_4" ); ?></p>
+					<p><?php the_field( "home_4" ); ?></p>
 	            </div>
 	            <div class="col_4">
 					<div class="icon-awareness"></div>
-					<p><?php echo get_field( "home_5" ); ?></p>
+					<p><?php the_field( "home_5" ); ?></p>
 	            </div>
 	            <div class="col_4">
 					<div class="icon-ribbon"></div>
-					<p><?php echo get_field( "home_6" ); ?></p>
+					<p><?php the_field( "home_6" ); ?></p>
 	            </div>
 	         </div>
          </div>
@@ -64,9 +64,9 @@
 
 </section>
 
-<section id="<?php pll_e("services"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_top_grey">
+<section id="<?php pll_e("services"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_top_grey anchor_offset">
 	<div class="parallax_image tajmahal">
-		<?php echo get_field( "image_text_1" ); ?>
+		<?php the_field( "image_text_1" ); ?>
 	</div>
 </section>
 
@@ -76,25 +76,25 @@
 			<div class="col_6">
 				<div class="icon icon-1"></div>
 				<div class="content">
-					<?php echo get_field( "service_1" ); ?>
+					<?php the_field( "service_1" ); ?>
 				</div>
 			</div>
 			<div class="col_6">
 				<div class="icon icon-2"></div>
 				<div class="content">
-					<?php echo get_field( "service_2" ); ?>
+					<?php the_field( "service_2" ); ?>
 				</div>
 			</div>
 			<div class="col_6">
 				<div class="icon icon-3"></div>
 				<div class="content">
-					<?php echo get_field( "service_3" ); ?>
+					<?php the_field( "service_3" ); ?>
 				</div>
 			</div>
 			<div class="col_6">
 				<div class="icon icon-4"></div>
 				<div class="content">
-					<?php echo get_field( "service_4" ); ?>
+					<?php the_field( "service_4" ); ?>
 				</div>
 			</div>
 		</div>
@@ -103,7 +103,7 @@
 
 <section id="" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_grey mod_top_grey">
 	<div class="parallax_image man ">
-		<?php echo get_field( "image_text_2" ); ?>
+		<?php the_field( "image_text_2" ); ?>
 	</div>
 </section>
 
@@ -113,34 +113,34 @@
 			<div class="col_6">
 				<div class="icon icon-5"></div>
 				<div class="content">
-					<?php echo get_field( "service_5" ); ?>
+					<?php the_field( "service_5" ); ?>
 				</div>
 			</div>
 			<div class="col_6">
 				<div class="icon icon-6"></div>
 				<div class="content">
-					<?php echo get_field( "service_6" ); ?>
+					<?php the_field( "service_6" ); ?>
 				</div>
 			</div>
 			<div class="col_6">
 				<div class="icon icon-7"></div>
 				<div class="content">
-					<?php echo get_field( "service_7" ); ?>
+					<?php the_field( "service_7" ); ?>
 				</div>
 			</div>
 			<div class="col_6">
 				<div class="icon icon-8"></div>
 				<div class="content">
-					<?php echo get_field( "service_8" ); ?>
+					<?php the_field( "service_8" ); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="<?php pll_e("about-us"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_grey mod_top_all_grey">
+<section id="<?php pll_e("about-us"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_grey mod_top_all_grey anchor_offset">
 	<div class="parallax_image paris">
-		<?php echo get_field( "image_text_3" ); ?>
+		<?php the_field( "image_text_3" ); ?>
 	</div>
 </section>
 
@@ -151,41 +151,33 @@
 			<div class="col_10">
 				<img src="<?php bloginfo('template_directory'); ?>/img/logo-ra-2.png" alt="">
 				<p>
-					<?php echo get_field( "about" ); ?>
+					<?php the_field( "about" ); ?>
+					<?php the_field( "about_name_4" ); ?>
 				</p>
 			</div>
 			<div class="col_1"></div>
 		</div>
-		<div class="row portraits_row">
-			<div class="col_1"></div>
-			<div class="col_4">
-				<div class="portrait_wrapper">
-					<div class="portrait_inner">
-						<img src="<?php bloginfo('template_directory'); ?>/img/portrait.png" alt="">
-					</div>
-					<p class="red_title"><?php echo get_field( "about_name_1" ); ?></p>
-					<?php echo get_field( "about_bio_1" ); ?>
-				</div>
-			</div>
-			<div class="col_2"></div>
-			<div class="col_4">
-				<div class="portrait_wrapper">
-					<div class="portrait_inner">
-						<img src="<?php bloginfo('template_directory'); ?>/img/portrait.png" alt="">
-					</div>
-					<p class="red_title"><?php echo get_field( "about_name_2" ); ?></p>
-					<?php echo get_field( "about_bio_2" ); ?>
-				</div>
-			</div>
-			<div class="col_1"></div>
 
-		</div>
+		<?php 
+
+		if( get_field('about_name_4') ):
+			include("partials/4bio.php");
+			
+		elseif( get_field('about_name_3') ):
+			include("partials/3bio.php");
+
+		else:
+			include("partials/2bio.php");	
+
+		endif; ?>
+
+
 	</div>
 </section>
 
-<section id="<?php pll_e("contact"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_bot_contact">
+<section id="<?php pll_e("contact"); ?>" class="parallax_image_wrapper mod_before_pan mod_after_pan mod_bot_2_white mod_bot_contact anchor_offset">
 	<div class="parallax_image tajmahal2">
-		<?php echo get_field( "image_text_4" ); ?>
+		<?php the_field( "image_text_4" ); ?>
 	</div>
 </section>
 
@@ -195,8 +187,8 @@
 		<div class="row">
 			<div class="col_1"></div>
 			<div class="col_6">
-				<p class="red_title"><?php echo get_field( "contact_title" ); ?></p>
-				<p class="contact_form_title"><?php echo get_field( "contact_description" ); ?></p>
+				<p class="red_title"><?php the_field( "contact_title" ); ?></p>
+				<p class="contact_form_title"><?php the_field( "contact_description" ); ?></p>
 				<?php 
 				if ( function_exists( 'ccf_output_form' ) ) {
 
@@ -212,13 +204,13 @@
 
 				<div class="row">
 					<div class="col_12">
-						<p class="red_title"><?php echo get_field( "contact_headquarters_title" ); ?></p>
-						<?php echo get_field( "contact_headquarters_address" ); ?>
+						<p class="red_title"><?php the_field( "contact_headquarters_title" ); ?></p>
+						<?php the_field( "contact_headquarters_address" ); ?>
 					</div>
 					<div class="col_12">
-						<p class="red_title"><?php echo get_field( "contact_offices_title" ); ?></p>
-						<?php echo get_field( "contact_offices_address_1" ); ?>
-						<?php echo get_field( "contact_offices_address_2" ); ?>
+						<p class="red_title"><?php the_field( "contact_offices_title" ); ?></p>
+						<?php the_field( "contact_offices_address_1" ); ?>
+						<?php the_field( "contact_offices_address_2" ); ?>
 					</div>
 
 				</div>

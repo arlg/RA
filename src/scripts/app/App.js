@@ -18,6 +18,7 @@ W.App = function(){
 
     function build(){
 
+        W.MenuScroll.init();
         _checkVideoLoaded();
         _smoothScroll();
 

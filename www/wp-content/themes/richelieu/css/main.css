@@ -457,8 +457,14 @@ body {
 	VIEWS
 **/
 #header {
+  width: 100%;
   height: 101px;
   background: #FFF;
+}
+#header.isfixed {
+  position: fixed;
+  top: 0;
+  z-index: 666;
 }
 #header #site_logo {
   margin: 15px 0 0 0;
@@ -493,12 +499,12 @@ body {
   font-family: 'Omnes', Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-size: 1rem;
 }
 #header nav li.lang a.active {
   color: #861817;
 }
 #header nav li.lang span {
-  font-size: 1.5625rem;
   font-family: 'Omnes', Arial, sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -946,8 +952,8 @@ footer .right .icon + .icon {
   z-index: 4;
   height: 48px;
   background-image: url("../img/hides/mod_bot_contact.png");
-  background-size: contain;
-  background-position: bottom;
+  background-size: cover;
+  background-position: top;
 }
 
 .mod_before_pan:before {
@@ -960,15 +966,16 @@ footer .right .icon + .icon {
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";
+  padding-top: 90px;
 }
 .mod_before_pan.mod_bot_2_white:before {
-  top: -1px;
+  top: -90px;
   z-index: 4;
   height: 48px;
   background-image: url("../img/hides/mod_bot_2_white.svg");
 }
 .mod_before_pan.mod_bot_grey:before {
-  top: -1px;
+  top: -90px;
   z-index: 4;
   height: 48px;
   background-image: url("../img/hides/mod_bot_grey.svg");
@@ -1040,7 +1047,7 @@ footer .right .icon + .icon {
     float: none;
     margin: 0 auto 10px auto;
   }
-  #about .col_4 {
+  #about .col_4, #about .col_3 {
     width: 70%;
     margin: 0 15% 20px 15%;
   }
@@ -1116,6 +1123,9 @@ footer .right .icon + .icon {
   }
   #header nav ul li {
     height: 30px;
+  }
+  #header.isfixed {
+    position: static;
   }
 
   #home_video p {

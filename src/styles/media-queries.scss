@@ -64,7 +64,7 @@
             margin: 0 auto 10px auto;
         }
 
-        .col_4{
+        .col_4, .col_3{
             width: 70%;
             margin: 0 15% 20px 15%;
         }
@@ -170,6 +170,10 @@
                     height: 30px;
                 }
             }
+        }
+
+        &.isfixed{
+            position: static;
         }
     }
 
