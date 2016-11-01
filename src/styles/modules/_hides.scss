@@ -11,7 +11,7 @@
 
 	&.mod_bot_white{
 		&:after{
-			bottom: -1px; 
+			bottom: -1px;
 			z-index: 4;
 			height: 48px;
 			background-image:url("../img/hides/mod_bot_white.svg");
@@ -20,7 +20,7 @@
 
 	&.mod_top_grey{
 		&:after{
-			bottom: -1px; 
+			bottom: -1px;
 			z-index: 4;
 			height: 48px;
 			background-image:url("../img/hides/mod_top_grey.svg");
@@ -30,7 +30,7 @@
 
 	&.mod_top_all_grey{
 		&:after{
-			bottom: -1px; 
+			bottom: -1px;
 			z-index: 4;
 			height: 48px;
 			background-image:url("../img/hides/mod_top_all_grey.svg");
@@ -40,7 +40,7 @@
 
 	&.mod_bot_contact{
 		&:after{
-			bottom: 0; 
+			bottom: 0;
 			z-index: 4;
 			height: 48px;
 			background-image:url("../img/hides/mod_bot_contact.png");
@@ -63,12 +63,12 @@
 		background-position: 50%;
 		background-repeat: no-repeat;
 		content: "";
-		padding-top: 90px;
+		// padding-top: 90px;
 	}
 
 	&.mod_bot_2_white{
 		&:before{
-			top: -90px; 
+			top: -1px;
 			z-index: 4;
 			height: 48px;
 			background-image:url("../img/hides/mod_bot_2_white.svg");
@@ -78,7 +78,7 @@
 
 	&.mod_bot_grey{
 		&:before{
-			top: -90px; 
+			top: -1px;
 			z-index: 4;
 			height: 48px;
 			background-image:url("../img/hides/mod_bot_grey.svg");

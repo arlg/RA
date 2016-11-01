@@ -429,7 +429,7 @@ body {
 	Common styles for the whole app
 **/
 /**
-	Everything common to the app 
+	Everything common to the app
 	( can make separate files in a folder )
 **/
 .red_title {
@@ -966,16 +966,15 @@ footer .right .icon + .icon {
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";
-  padding-top: 90px;
 }
 .mod_before_pan.mod_bot_2_white:before {
-  top: -90px;
+  top: -1px;
   z-index: 4;
   height: 48px;
   background-image: url("../img/hides/mod_bot_2_white.svg");
 }
 .mod_before_pan.mod_bot_grey:before {
-  top: -90px;
+  top: -1px;
   z-index: 4;
   height: 48px;
   background-image: url("../img/hides/mod_bot_grey.svg");
