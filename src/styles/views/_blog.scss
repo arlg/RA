@@ -16,6 +16,7 @@
 		h2, p{
 			color: #3b4145;
 			@include font-omnes-light();
+			line-height: 1.2;
 		}
 
 		h2{
@@ -27,6 +28,10 @@
 			margin: 0 auto;
 			text-align: justify;
 			font-size: getFontSize(15);
+
+			strong{
+				font-weight: bold;
+			}
 		}
 
 		p.img_wrapper img{

@@ -13,12 +13,13 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="<?php pll_e("Description"); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="//richelieuadvisors.in/wp-content/uploads/2014/07/favicon-richelieu.png" />
 
         <title>Richelieu Advisors</title>
         <?php wp_head(); ?>
     </head>
     <body>
-        
+
 <header id="header">
     <div class="grid_container">
         <div class="row">
@@ -49,12 +50,12 @@
                             <a href="/en" class="<?php echo pll_current_language() == "en" ? "active" : "" ;?>">EN</a>
                             <span>|</span>
                             <a href="/fr" class="<?php echo pll_current_language() == "fr" ? "active" : "" ;?>">FR</a>
-                        </li>                        
+                        </li>
                     </ul>
                 </nav>
 
             </div>
-            
+
         </div>
     </div>
 </header>

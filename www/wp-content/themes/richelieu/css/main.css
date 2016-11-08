@@ -560,7 +560,7 @@ body {
 }
 
 #home_want {
-  margin: 40px 0 130px 0;
+  margin: 40px 0;
 }
 #home_want h3 {
   color: #c81517;
@@ -716,6 +716,10 @@ body {
   margin: 17px 0 0 0;
 }
 #about .portraits_row .red_title {
+  margin: 0 0 5px 0;
+}
+#about .portraits_row .red_title.job {
+  font-size: 1.25rem;
   margin: 0 0 25px 0;
 }
 #about .portraits_row .bio {
@@ -870,6 +874,7 @@ footer .right .icon + .icon {
   font-family: 'Omnes', Arial, sans-serif;
   font-style: normal;
   font-weight: 200;
+  line-height: 1.2;
 }
 #blog #blog_contents h2 {
   font-size: 1.5625rem;
@@ -879,6 +884,9 @@ footer .right .icon + .icon {
   margin: 0 auto;
   text-align: justify;
   font-size: 0.9375rem;
+}
+#blog #blog_contents p.col_10 strong {
+  font-weight: bold;
 }
 #blog #blog_contents p.img_wrapper img {
   width: 100%;
@@ -928,29 +936,24 @@ footer .right .icon + .icon {
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";
+  z-index: 4;
+  height: 48px;
 }
 .mod_after_pan.mod_bot_white:after {
   bottom: -1px;
-  z-index: 4;
-  height: 48px;
   background-image: url("../img/hides/mod_bot_white.svg");
 }
 .mod_after_pan.mod_top_grey:after {
   bottom: -1px;
-  z-index: 4;
-  height: 48px;
   background-image: url("../img/hides/mod_top_grey.svg");
 }
 .mod_after_pan.mod_top_all_grey:after {
   bottom: -1px;
-  z-index: 4;
-  height: 48px;
   background-image: url("../img/hides/mod_top_all_grey.svg");
 }
 .mod_after_pan.mod_bot_contact:after {
   bottom: 0;
   z-index: 4;
-  height: 48px;
   background-image: url("../img/hides/mod_bot_contact.png");
   background-size: cover;
   background-position: top;
@@ -966,17 +969,15 @@ footer .right .icon + .icon {
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";
+  z-index: 4;
+  height: 48px;
 }
 .mod_before_pan.mod_bot_2_white:before {
   top: -1px;
-  z-index: 4;
-  height: 48px;
   background-image: url("../img/hides/mod_bot_2_white.svg");
 }
 .mod_before_pan.mod_bot_grey:before {
   top: -1px;
-  z-index: 4;
-  height: 48px;
   background-image: url("../img/hides/mod_bot_grey.svg");
 }
 
@@ -1159,5 +1160,20 @@ footer .right .icon + .icon {
   }
   #contact_section .col_12 + .col_12 {
     margin: 25px 0 0 0;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .mod_before_pan:before {
+    height: 23px;
+  }
+
+  .mod_after_pan:after {
+    height: 23px;
+  }
+
+  #home_video .mod_after_pan:after {
+    height: 48px !important;
+    bottom: -10px !important;
   }
 }

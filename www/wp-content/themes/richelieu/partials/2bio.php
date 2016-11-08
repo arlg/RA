@@ -6,6 +6,7 @@
 				<img src="<?php the_field( "about_image_1" ); ?>" alt="<?php the_field( "about_name_1" ); ?>">
 			</div>
 			<p class="red_title"><?php the_field( "about_name_1" ); ?></p>
+			<p class="red_title job"><?php the_field( "about_statut_1" ); ?></p>
 			<?php the_field( "about_bio_1" ); ?>
 		</div>
 	</div>
@@ -16,6 +17,7 @@
 				<img src="<?php the_field( "about_image_2" ); ?>" alt="<?php the_field( "about_name_2" ); ?>">
 			</div>
 			<p class="red_title"><?php the_field( "about_name_2" ); ?></p>
+			<p class="red_title job"><?php the_field( "about_statut_2" ); ?></p>
 			<?php the_field( "about_bio_2" ); ?>
 		</div>
 	</div>
