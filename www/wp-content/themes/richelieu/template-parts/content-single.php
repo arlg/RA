@@ -14,10 +14,6 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php // twentysixteen_excerpt(); ?>
-
-	<?php // twentysixteen_post_thumbnail(); ?>
-
 	<div class="entry-content">
 		<?php
 			the_content();
@@ -33,5 +29,8 @@
 
 		?>
 	</div><!-- .entry-content -->
+
+		<?php echo do_shortcode('[ssba]'); ?>
+
 
 </article><!-- #post-## -->

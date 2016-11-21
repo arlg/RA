@@ -34,7 +34,6 @@ function add_class_to_p_content( $content ) {
     return str_replace('<p>', '<p class="col_10">', $content);
 }
 
-
 add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
 
@@ -67,6 +66,5 @@ pll_register_string( 'previous', 'Previous', 'blog' );
 pll_register_string( 'next', 'Next', 'blog' );
 
 }
-
 
 ?>

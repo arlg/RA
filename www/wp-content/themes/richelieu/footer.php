@@ -17,10 +17,10 @@
 			<div class="col_6 right">
 				<ul>
 					<li class="icon">
-                        <a href="<?php pll_e("linkedin"); ?>" class="icon-linkedin"></a>
+                        <a href="<?php pll_e("linkedin"); ?>" class="icon-linkedin" target="_blank"></a>
                     </li>
                     <li class="icon">
-                        <a href="<?php pll_e("twitter"); ?>" class="icon-twitter"></a>
+                        <a href="<?php pll_e("twitter"); ?>" class="icon-twitter" target="_blank"></a>
                     </li>
                 </ul>
 			</div>

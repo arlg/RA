@@ -13,7 +13,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="<?php pll_e("Description"); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="//richelieuadvisors.in/wp-content/uploads/2014/07/favicon-richelieu.png" />
+        <link rel="shortcut icon" href="http://richelieuadvisors.com/favicon.ico" />
 
         <title>Richelieu Advisors</title>
         <?php wp_head(); ?>

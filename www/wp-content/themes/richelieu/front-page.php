@@ -13,11 +13,11 @@
 <?php get_header(); ?>
 
 <section id="home_video" class="main_section mod_after_pan mod_bot_white">
-	
+
 	<p><?php the_field( "video_text" ); ?></p>
 
 	<div class="red_cover"></div>
-	
+
 	<div class="video_wrapper">
 		<video loop muted preload autoplay playsinline>
 			<source src="<?php bloginfo('template_directory'); ?>/video/home_video.webm" type="video/webm">
@@ -25,7 +25,7 @@
 			<source src="<?php bloginfo('template_directory'); ?>/video/home_video.ogv" type="video/ogv">
 	    </video>
 	</div>
-	
+
 </section>
 
 <section id="home_want" class="main_section">
@@ -152,22 +152,21 @@
 				<img src="<?php bloginfo('template_directory'); ?>/img/logo-ra-2.png" alt="">
 				<p>
 					<?php the_field( "about" ); ?>
-					<?php the_field( "about_name_4" ); ?>
 				</p>
 			</div>
 			<div class="col_1"></div>
 		</div>
 
-		<?php 
+		<?php
 
 		if( get_field('about_name_4') ):
 			include("partials/4bio.php");
-			
+
 		elseif( get_field('about_name_3') ):
 			include("partials/3bio.php");
 
 		else:
-			include("partials/2bio.php");	
+			include("partials/2bio.php");
 
 		endif; ?>
 
@@ -182,14 +181,14 @@
 </section>
 
 <section id="contact_section" class="">
-	
+
 	<div class="grid_container">
 		<div class="row">
 			<div class="col_1"></div>
 			<div class="col_6">
 				<p class="red_title"><?php the_field( "contact_title" ); ?></p>
 				<p class="contact_form_title"><?php the_field( "contact_description" ); ?></p>
-				<?php 
+				<?php
 				if ( function_exists( 'ccf_output_form' ) ) {
 
 					if( pll_current_language() == "en")

@@ -1,8 +1,8 @@
 var W = W || {};
 
 W.App = function(){
-    
-    var _domPlayer, 
+
+    var _domPlayer,
         _domVideo,
         _domVideoInner;
 
@@ -14,12 +14,16 @@ W.App = function(){
 
         build();
 
+        console.log('Website Development: http://arlg.me');
     }
 
     function build(){
 
         W.MenuScroll.init();
-        _checkVideoLoaded();
+
+        if(_domVideoInner)
+            _checkVideoLoaded();
+
         _smoothScroll();
 
     }

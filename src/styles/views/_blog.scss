@@ -4,6 +4,7 @@
 
 		article{
 			margin: 0 0 70px 0;
+			clear: both;
 		}
 
 		h1{
@@ -34,15 +35,28 @@
 			}
 		}
 
-		p.img_wrapper img{
-			width: 100%;
-			height: auto;
-			margin: 50px 0 30px;
+		p.img_wrapper{
+			.large{
+				width: 100%;
+				height: auto;
+				margin: 50px 0 30px;
+			}
+
+			.aligncenter{
+				display: block;
+				margin: 0 auto;
+			}
+
+			.alignright{
+				display: block;
+    			margin: 0 0 0 auto;
+			}
 		}
 	}
 
 	.posts_nav{
 		margin: 0 auto 45px auto;
+		clear: both;
 
 		&:after {
     		content: '';
@@ -75,5 +89,10 @@
 			text-align: left;
 			background: url("../img/icon-arrow-submit.png") no-repeat $bordeau 80% 13px;
 		}
+	}
+
+	.ssba-wrap{
+		float: right;
+		margin: 10px 9% 10px 0;
 	}
 }
