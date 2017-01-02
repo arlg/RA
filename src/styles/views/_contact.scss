@@ -42,7 +42,7 @@
 		input, textarea{
 			width: 60%;
 			padding: 15px 20px;
-			height: 15px;
+			height: 100%;
 			color: #3b4145;
 			@include font-omnes-light();
 			font-size: getFontSize(15);
@@ -84,7 +84,7 @@
 			font-size: getFontSize(15);
 			color: #fff;
 			text-align: left;
-			
+
 			background: url("../img/icon-arrow-submit.png") no-repeat $bordeau 83% 13px;
 
 			&:focus{
